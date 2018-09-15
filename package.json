@@ -1,0 +1,23 @@
+{
+  "name": "building-with-responsive-design",
+  "version": "1.0.0",
+  "description": "The Next Web magazine site clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass -w ./styles/ -o ./build/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bojana12/building-with-responsive-design.git"
+  },
+  "author": "Bojana Karakacev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bojana12/building-with-responsive-design/issues"
+  },
+  "homepage": "https://github.com/bojana12/building-with-responsive-design#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}
