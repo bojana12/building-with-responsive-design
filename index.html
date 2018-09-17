@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="./build/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Arsenal:400,700" rel="stylesheet">
 
     <title>TNW clone</title>
   </head>
   <body>
     <header>
       <div class="container">
-        <img src="./images/TNW-logo.png" class="logo-img">
+        <img src="./images/TNW-logo-mobile.png" class="logo-img">
     
         <div class="nav-icons">
           <div class="search-icon">
@@ -28,8 +29,26 @@
     </header>
 
     <div class="main-container">
+      <section class="recent-articles">
+        <article>
+          <div class="cover-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(./images/article-img1.jpg)">
+            <div class="content">
+              <h3>TECH</h3>
+              <h2>Cardano talks blockchain innovation with Mongolian government</h2>
+              <span>by David Canellis</span>
+              <span><i class="far fa-clock"></i> 2 hours ago</span>
+              <span><i class="fas fa-share-alt"></i> 11</span> 
+            </div><!-- end of content -->
+          </div><!-- end of cover-image -->
+        </article>
 
-    </div>
+        <article>
+          <div class="cover-image" style="background-image: url(./images/article-img2.jpg)"></div>
+        </article>
 
+        <article>
+          <div class="cover-image" style="background-image: url(./images/article-img3.png)"></div>        
+        </article>
+    </div><!-- end of recent-articles -->
   </body>
 </html>
