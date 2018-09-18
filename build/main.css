@@ -35,38 +35,38 @@ header {
     width: 95%;
     margin: 0 auto; }
     .main-container .recent-articles article .cover-image {
+      position: relative;
       height: 192px;
       width: 100%;
       margin-top: 20px; }
     .main-container .recent-articles article .content {
-      color: white;
-      position: relative;
-      margin: 0 5px 5px 5px;
-      bottom: -40%;
-      text-shadow: 0 1px 0 black; }
+      position: absolute;
+      left: 4px;
+      right: 4px;
+      bottom: 4px;
+      padding: 14px 12px;
+      text-shadow: 0 1px 0 black;
+      color: white; }
+      .main-container .recent-articles article .content span {
+        padding-right: 5px; }
       .main-container .recent-articles article .content h2 {
         margin: 0 5px 0 0;
         font-size: 20px; }
       .main-container .recent-articles article .content h3 {
         margin-bottom: 0;
-        font-weight: 300;
-        font-size: 14px; }
+        font-weight: 500;
+        font-size: 13px; }
       .main-container .recent-articles article .content span {
         font-size: 12px; }
 
 body {
-  font-family: Arsenal, Arial, sans-serif; }
+  font-family: Roboto, Arial, sans-serif; }
 
 .latest-news {
   position: relative;
   margin: 0 auto;
   width: 90%;
   margin-top: 80px; }
-  .latest-news h1 {
-    color: #f42;
-    font-size: 26px; }
-    .latest-news h1 i.fa-greater-than {
-      font-size: 19px; }
   .latest-news article {
     display: flex;
     justify-content: space-between;
@@ -84,3 +84,78 @@ body {
         display: block;
         padding-top: 10px;
         color: #aaa; }
+
+.heading-decoration {
+  font-size: 26px;
+  color: #f42; }
+
+.red {
+  color: #f42; }
+
+.light-grey {
+  color: #aaa; }
+
+.sign-decoration {
+  font-size: 19px;
+  padding: 8px; }
+
+.pr-5 {
+  padding-right: 5px; }
+
+.latest-funding {
+  width: 90%;
+  margin: 0 auto; }
+  .latest-funding ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .latest-funding ul li {
+      padding: 5px 0;
+      font-size: 14px; }
+  .latest-funding .card {
+    margin: 20px 0 10px 0; }
+    .latest-funding .card img {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      padding: 10px; }
+    .latest-funding .card .title {
+      width: 100%;
+      height: 43px;
+      background-color: #f42; }
+      .latest-funding .card .title h4 {
+        position: relative;
+        margin-left: 82px;
+        padding-top: 12px;
+        font-size: 18px;
+        color: white; }
+    .latest-funding .card .price {
+      width: 100%;
+      height: 59px;
+      background: rgba(255, 68, 34, 0.08); }
+      .latest-funding .card .price span {
+        display: block;
+        margin-left: 82px;
+        padding-top: 10px;
+        font-weight: 700; }
+        .latest-funding .card .price span:last-child {
+          font-weight: 300 !important;
+          font-size: 11px;
+          padding-top: 2px; }
+    .latest-funding .card .content {
+      background-color: #fef9f9; }
+      .latest-funding .card .content span {
+        display: block;
+        font-size: 12px;
+        font-weight: 300;
+        padding: 15px 16px 0 16px; }
+        .latest-funding .card .content span:last-child {
+          padding: 5px 0 0 0; }
+      .latest-funding .card .content hr {
+        display: block;
+        border-top: 1px solid rgba(255, 68, 34, 0.25);
+        margin-top: 20px; }
+      .latest-funding .card .content h5 {
+        padding: 0 16px 16px 16px;
+        margin: 0;
+        font-weight: 300; }
