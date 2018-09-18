@@ -4,7 +4,9 @@ header {
   position: fixed;
   top: 0;
   border-bottom: 1px solid #ecf0f1;
+  background-color: #fff;
   box-shadow: 0 3px 16px -6px #bdc3c7;
+  z-index: 10;
 
   .container {
     height: 100%;

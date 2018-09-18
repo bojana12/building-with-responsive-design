@@ -1,11 +1,12 @@
-@import url(variables.css);
 header {
   width: 100%;
   height: 48px;
   position: fixed;
   top: 0;
   border-bottom: 1px solid #ecf0f1;
-  box-shadow: 0 3px 16px -6px #bdc3c7; }
+  background-color: #fff;
+  box-shadow: 0 3px 16px -6px #bdc3c7;
+  z-index: 10; }
   header .container {
     height: 100%;
     display: flex;
@@ -40,13 +41,46 @@ header {
     .main-container .recent-articles article .content {
       color: white;
       position: relative;
-      top: 65px;
-      left: 10px;
+      margin: 0 5px 5px 5px;
+      bottom: -40%;
       text-shadow: 0 1px 0 black; }
       .main-container .recent-articles article .content h2 {
-        margin: 0 5px 0 0; }
+        margin: 0 5px 0 0;
+        font-size: 20px; }
       .main-container .recent-articles article .content h3 {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        font-weight: 300;
+        font-size: 14px; }
+      .main-container .recent-articles article .content span {
+        font-size: 12px; }
 
 body {
   font-family: Arsenal, Arial, sans-serif; }
+
+.latest-news {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 80px; }
+  .latest-news h1 {
+    color: #f42;
+    font-size: 26px; }
+    .latest-news h1 i.fa-greater-than {
+      font-size: 19px; }
+  .latest-news article {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+    .latest-news article img {
+      width: 75px;
+      height: 70px; }
+    .latest-news article .content {
+      margin-left: 20px; }
+      .latest-news article .content .title {
+        font-size: 14px;
+        font-weight: 700; }
+      .latest-news article .content span {
+        font-size: 12px;
+        display: block;
+        padding-top: 10px;
+        color: #aaa; }
