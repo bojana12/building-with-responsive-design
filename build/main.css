@@ -38,17 +38,19 @@ header {
       position: relative;
       height: 192px;
       width: 100%;
-      margin-top: 20px; }
+      margin-top: 20px;
+      background-repeat: no-repeat; }
     .main-container .recent-articles article .content {
       position: absolute;
       left: 4px;
       right: 4px;
-      bottom: 4px;
+      bottom: 0;
       padding: 14px 12px;
       text-shadow: 0 1px 0 black;
       color: white; }
       .main-container .recent-articles article .content span {
-        padding-right: 5px; }
+        padding-right: 5px;
+        font-size: 12px; }
       .main-container .recent-articles article .content h2 {
         margin: 0 5px 0 0;
         font-size: 20px; }
@@ -56,30 +58,34 @@ header {
         margin-bottom: 0;
         font-weight: 500;
         font-size: 13px; }
-      .main-container .recent-articles article .content span {
-        font-size: 12px; }
 
 body {
   font-family: Roboto, Arial, sans-serif; }
 
-.latest-news {
+.latest-news,
+.latest-deals {
   position: relative;
   margin: 0 auto;
   width: 90%;
   margin-top: 80px; }
-  .latest-news article {
+  .latest-news article,
+  .latest-deals article {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px; }
-    .latest-news article img {
+    .latest-news article img,
+    .latest-deals article img {
       width: 75px;
       height: 70px; }
-    .latest-news article .content {
+    .latest-news article .content,
+    .latest-deals article .content {
       margin-left: 20px; }
-      .latest-news article .content .title {
+      .latest-news article .content .title,
+      .latest-deals article .content .title {
         font-size: 14px;
         font-weight: 700; }
-      .latest-news article .content span {
+      .latest-news article .content span,
+      .latest-deals article .content span {
         font-size: 12px;
         display: block;
         padding-top: 10px;
@@ -89,11 +95,17 @@ body {
   font-size: 26px;
   color: #f42; }
 
+.link-decoration {
+  text-decoration: none;
+  float: right;
+  margin-top: 30px;
+  font-size: 14px; }
+
 .red {
-  color: #f42; }
+  color: #f42 !important; }
 
 .light-grey {
-  color: #aaa; }
+  color: #aaa !important; }
 
 .sign-decoration {
   font-size: 19px;
@@ -101,6 +113,27 @@ body {
 
 .pr-5 {
   padding-right: 5px; }
+
+.mt-5 {
+  margin-top: 5px; }
+
+.mt-40 {
+  margin-top: 40px !important; }
+
+.bckg-position-t {
+  background-position: top; }
+
+.bckg-position-c {
+  background-position: center; }
+
+.hide {
+  display: none !important; }
+
+.line-through {
+  text-decoration: line-through; }
+
+.display-ib {
+  display: inline-block !important; }
 
 .latest-funding {
   width: 90%;
@@ -159,3 +192,57 @@ body {
         padding: 0 16px 16px 16px;
         margin: 0;
         font-weight: 300; }
+
+.articles {
+  width: 90%;
+  margin: 0 auto; }
+  .articles .cover-image {
+    height: 280px;
+    position: relative; }
+    .articles .cover-image .content {
+      position: absolute;
+      left: 4px;
+      right: 4px;
+      bottom: 0;
+      padding: 14px 12px;
+      text-shadow: 0 1px 0 black;
+      color: white; }
+      .articles .cover-image .content span {
+        font-size: 12px; }
+      .articles .cover-image .content h2 {
+        margin: 0 5px 0 0;
+        font-size: 20px; }
+      .articles .cover-image .content h3 {
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 13px; }
+  .articles .latest {
+    display: flex;
+    height: 96px;
+    justify-content: space-between;
+    background-color: #ffe6e6; }
+    .articles .latest .text {
+      padding: 10px 14px 0; }
+      .articles .latest .text h5 {
+        font-weight: 300;
+        margin: 5px 0; }
+      .articles .latest .text p {
+        margin: 0;
+        font-weight: 700;
+        font-size: 14px; }
+    .articles .latest img {
+      width: 96px;
+      height: 96px;
+      background-repeat: no-repeat; }
+  .articles ul {
+    padding-left: 20px;
+    margin: 0; }
+    .articles ul li {
+      display: inline-block;
+      display: list-item;
+      padding: 10px 0 10px 0;
+      font-size: 13px;
+      color: #555; }
+    .articles ul hr {
+      margin: 0 0 0 -15px;
+      border-top: 0.5px solid #dfe6e9; }

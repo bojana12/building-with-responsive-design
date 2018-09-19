@@ -3,12 +3,19 @@
   color: #f42;
 }
 
+.link-decoration {
+  text-decoration: none;
+  float: right;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
 .red {
-  color: #f42;
+  color: #f42 !important;
 }
 
 .light-grey {
-  color: #aaa;
+  color: #aaa !important;
 }
 
 .sign-decoration {
@@ -20,3 +27,30 @@
   padding-right: 5px;
 }
 
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+.bckg-position-t {
+  background-position: top;
+}
+
+.bckg-position-c {
+  background-position: center;
+}
+
+.hide {
+  display: none !important;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.display-ib {
+  display: inline-block !important;
+}
