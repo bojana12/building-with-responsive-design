@@ -194,7 +194,7 @@ body {
           padding: 5px 0 0 0; }
       .latest-funding .card .content hr {
         display: block;
-        border-top: 1px solid rgba(255, 68, 34, 0.25);
+        border: 0.5px solid rgba(255, 68, 34, 0.25);
         margin-top: 20px; }
       .latest-funding .card .content h5 {
         padding: 0 16px 16px 16px;
@@ -253,7 +253,7 @@ body {
       color: #555; }
     .articles ul hr {
       margin: 0 0 0 -15px;
-      border-top: 0.5px solid #dfe6e9; }
+      border: 0.5px solid #dfe6e9; }
 
 footer {
   width: 100%;
