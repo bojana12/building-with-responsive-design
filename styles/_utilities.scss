@@ -10,6 +10,12 @@
   font-size: 14px;
 }
 
+.ul-decoration {
+  text-decoration: none;
+  padding: 0;
+  text-align: center;
+}
+
 .red {
   color: #f42 !important;
 }
@@ -53,4 +59,8 @@
 
 .display-ib {
   display: inline-block !important;
+}
+
+.rotate {
+  transform: rotate(50deg);
 }
