@@ -7,60 +7,113 @@ header {
   background-color: #fff;
   box-shadow: 0 3px 16px -6px #bdc3c7;
   z-index: 10; }
-  header .container {
+
+@media screen and (min-width: 768px) {
+  .first-header {
+    display: none; } }
+
+.first-header .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between; }
+  .first-header .container .logo-img {
+    width: 106px;
+    height: auto; }
+  .first-header .container .nav-icons {
+    display: block; }
+    .first-header .container .nav-icons .search-icon,
+    .first-header .container .nav-icons .menu-icon {
+      display: inline-block;
+      border-left: 1px solid #ecf0f1;
+      padding: 16px; }
+    .first-header .container .nav-icons .search-icon {
+      color: #bdc3c7; }
+    .first-header .container .nav-icons .menu-icon {
+      color: #f42; }
+
+.second-header {
+  height: 82px; }
+  @media screen and (max-width: 425px) {
+    .second-header {
+      display: none; } }
+  .second-header .navbar {
+    position: relative;
+    height: 32px;
+    background: #131313;
+    font-size: 13px;
+    font-weight: 500; }
+    .second-header .navbar ul {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0 0 0 20px;
+      margin: 0; }
+      .second-header .navbar ul li {
+        display: inline-block;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.6);
+        padding-right: 10px; }
+    .second-header .navbar .right-links {
+      left: 70%; }
+  .second-header nav {
     height: 100%;
     display: flex;
     justify-content: space-between; }
-    header .container .logo-img {
-      width: 106px;
-      height: auto; }
-    header .container .nav-icons {
-      display: block; }
-      header .container .nav-icons .search-icon,
-      header .container .nav-icons .menu-icon {
+    .second-header nav ul {
+      padding: 0 0 0 20px; }
+      .second-header nav ul li {
+        text-decoration: none;
         display: inline-block;
-        border-left: 1px solid #ecf0f1;
-        padding: 16px; }
-      header .container .nav-icons .search-icon {
-        color: #bdc3c7; }
-      header .container .nav-icons .menu-icon {
-        color: #f42; }
+        text-transform: uppercase;
+        padding-right: 15px;
+        color: #aaa;
+        font-size: 14px;
+        font-weight: 500; }
+    .second-header nav .nav-icons ul {
+      margin: 0; }
+      .second-header nav .nav-icons ul li:last-child {
+        padding: 16px !important;
+        border-left: 1px solid #ecf0f1; }
+      .second-header nav .nav-icons ul li i {
+        font-size: 16px;
+        color: #aaa; }
+
+body {
+  font-family: Roboto, Arial, sans-serif; }
 
 .main-container {
   position: relative;
   top: 20px; }
-  .main-container .recent-articles {
-    position: relative;
-    top: 40px;
-    width: 95%;
-    margin: 0 auto; }
-    .main-container .recent-articles article .cover-image {
-      position: relative;
-      height: 192px;
-      width: 100%;
-      margin-top: 20px;
-      background-repeat: no-repeat; }
-    .main-container .recent-articles article .content {
-      position: absolute;
-      left: 4px;
-      right: 4px;
-      bottom: 0;
-      padding: 14px 12px;
-      text-shadow: 0 1px 0 black;
-      color: white; }
-      .main-container .recent-articles article .content span {
-        padding-right: 5px;
-        font-size: 12px; }
-      .main-container .recent-articles article .content h2 {
-        margin: 0 5px 0 0;
-        font-size: 20px; }
-      .main-container .recent-articles article .content h3 {
-        margin-bottom: 0;
-        font-weight: 500;
-        font-size: 13px; }
 
-body {
-  font-family: Roboto, Arial, sans-serif; }
+.recent-articles {
+  position: relative;
+  top: 40px;
+  width: 95%;
+  margin: 0 auto; }
+  .recent-articles article .cover-image {
+    position: relative;
+    height: 192px;
+    width: 100%;
+    margin-top: 20px;
+    background-repeat: no-repeat; }
+  .recent-articles article .content {
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    bottom: 0;
+    padding: 14px 12px;
+    text-shadow: 0 1px 0 black;
+    color: white; }
+    .recent-articles article .content span {
+      padding-right: 5px;
+      font-size: 12px; }
+    .recent-articles article .content h2 {
+      margin: 0 5px 0 0;
+      font-size: 20px; }
+    .recent-articles article .content h3 {
+      margin-bottom: 0;
+      font-weight: 500;
+      font-size: 13px; }
 
 .latest-news,
 .latest-deals {
