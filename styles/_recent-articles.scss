@@ -4,6 +4,11 @@
   width: 95%;
   margin: 0 auto;
 
+  @include tablet {
+    top: 75px;
+    width: 100%;
+  }
+
   article {
     .cover-image {
       position: relative;
@@ -25,6 +30,7 @@
       span {
         padding-right: 5px;
         font-size: 12px;
+        color: hsla(0,0%,100%,.6);
       }
 
       h2 {
@@ -39,4 +45,74 @@
       }
     }
   } // end of article
+
+  .main-article {
+    @include tablet {
+      width: 66%;
+      height: 100%;
+      padding-left: 7px;
+
+      .cover-image {
+        height: 339px;
+
+        h2 {
+          font-size: 40px;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+
+  .first-article {
+    @include tablet {
+      position: absolute;
+      width: 31%;
+      top: -20px;
+      right: 7px;
+
+      .cover-image {
+        height: 165px;
+
+        .content {
+          padding: 14px 10px;
+        }
+
+        h2 {
+          font-size: 14px;
+          font-weight: 900;
+        }
+
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .second-article {
+    @include tablet {
+      position: absolute;
+      width: 31%;
+      right: 7px;
+      bottom: 0;
+
+      .cover-image {
+        height: 165px;
+        margin: 0;
+        
+        .content {
+          padding: 14px 10px;
+        }
+
+        h2 {
+          font-size: 14px;
+          font-weight: 900;
+        }
+
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+  }
 } // end of recent-articles

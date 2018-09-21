@@ -10,7 +10,7 @@ header {
 } // end of header
 
 .first-header {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 
@@ -46,11 +46,12 @@ header {
 } // end of first-header
 
 .second-header {
-  @media screen and (max-width: 425px) {
-    display: none;
-  }
-
+  display: none;
   height: 82px;
+
+  @include tablet {
+    display: block;
+  }
 
   .navbar {
     position: relative;
@@ -76,6 +77,10 @@ header {
 
     .right-links {
       left: 70%;
+
+      @include tablet {
+        left: 60%;
+      }
     }
   } // end of navbar
 
@@ -95,6 +100,10 @@ header {
         color: #aaa;
         font-size: 14px;
         font-weight: 500;
+
+        @include tablet {
+          padding-right: 7px;
+        }
       }
     }
 
