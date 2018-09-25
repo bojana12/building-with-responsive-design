@@ -6,7 +6,11 @@
 
   @include tablet {
     top: 75px;
-    width: 100%;
+    width: 98%;
+  }
+
+  @include laptop {
+    top: 90px;
   }
 
   article {
@@ -51,27 +55,37 @@
     @include tablet {
       width: 66%;
       height: 100%;
-      padding-left: 7px;
 
       .cover-image {
         height: 339px;
 
         h2 {
           font-size: 40px;
+
+          @include laptop {
+            font-size: 56px;
+          }
         }
       }
+    } // end pf tablet
+
+    @include laptop {
+      .cover-image {
+        height: 479px;
+      }
     }
-  }
+  } // end of main-article
 
   .first-article {
     @include tablet {
       position: absolute;
-      width: 31%;
-      top: -20px;
-      right: 7px;
+      width: 33%;
+      top: 0;
+      right: 0;
 
       .cover-image {
         height: 165px;
+        margin: 0;
 
         .content {
           padding: 14px 10px;
@@ -85,15 +99,15 @@
         span {
           font-size: 10px;
         }
-      }
-    }
-  }
+      } // end of cover-image
+    } // end of tablet
+  } // end of first article
 
   .second-article {
     @include tablet {
       position: absolute;
-      width: 31%;
-      right: 7px;
+      width: 33%;
+      right: 0;
       bottom: 0;
 
       .cover-image {
@@ -112,6 +126,15 @@
         span {
           font-size: 10px;
         }
+      } // end of cover-image
+    } // end of tablet
+  } // end of second-article
+
+  .first-article,
+  .second-article {
+    @include laptop {
+      .cover-image {
+        height: 235.5px;
       }
     }
   }

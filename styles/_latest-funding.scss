@@ -1,9 +1,24 @@
 .latest-funding {
   width: 90%;
+  position: relative;
   margin: 0 auto;
 
   @include tablet {
     width: 95%;
+  }
+
+  @include laptop {
+    width: 97%;
+  }
+
+  h1 {
+    @include laptop {
+      margin-left: 5px;
+    }
+  }
+
+  @include large-laptop {
+    width: 80%;
   }
 
   ul {
@@ -11,12 +26,28 @@
     padding: 0;
     margin: 0;
 
+    @include large-laptop {
+      position: absolute;
+      right: 0;
+      top: 17px;
+    }
+
     li {
       padding: 5px 0;
       font-size: 14px;
 
       @include tablet {
         font-size: 16px;
+      }
+
+      @include laptop {
+        display: inline-block;
+        padding: 0 5px;
+        border-right: 1.5px solid #f42;
+
+        &:last-child {
+          border: none;
+        }
       }
     }
   }

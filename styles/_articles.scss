@@ -6,6 +6,10 @@
     width: 97%;
   }
 
+  @include large-laptop {
+    width: 80%;
+  }
+
   .cover-image {
     height: 280px;
     position: relative;
@@ -81,7 +85,7 @@
       margin: 0 0 0 -15px;
       border: 0.5px solid #dfe6e9;
     }
-  }
+  } // end of ul
 
   .container {
     @include tablet {
@@ -91,7 +95,11 @@
       article {
         width: 47.3%;
         padding: 10px;
+
+        @include laptop {
+          width: 31.3%;
+        }
       }
-    }
-  }
+    } // end of tablet
+  } // end of container
 } // end of articles

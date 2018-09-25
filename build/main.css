@@ -25,11 +25,12 @@ header {
     .first-header .container .nav-icons .menu-icon {
       display: inline-block;
       border-left: 1px solid #ecf0f1;
-      padding: 16px; }
+      padding: 13px; }
     .first-header .container .nav-icons .search-icon {
       color: #bdc3c7; }
     .first-header .container .nav-icons .menu-icon {
-      color: #f42; }
+      color: #f42;
+      font-size: 20px; }
 
 .second-header {
   display: none;
@@ -59,6 +60,12 @@ header {
       @media screen and (min-width: 450px) {
         .second-header .navbar .right-links {
           left: 60%; } }
+      @media screen and (min-width: 1024px) {
+        .second-header .navbar .right-links {
+          left: 72%; } }
+      @media screen and (min-width: 1440px) {
+        .second-header .navbar .right-links {
+          left: 79%; } }
   .second-header nav {
     height: 100%;
     display: flex;
@@ -76,6 +83,9 @@ header {
         @media screen and (min-width: 450px) {
           .second-header nav ul li {
             padding-right: 7px; } }
+        @media screen and (min-width: 1024px) {
+          .second-header nav ul li {
+            padding-right: 15px; } }
     .second-header nav .nav-icons ul {
       margin: 0; }
       .second-header nav .nav-icons ul li:last-child {
@@ -100,7 +110,10 @@ body {
   @media screen and (min-width: 450px) {
     .recent-articles {
       top: 75px;
-      width: 100%; } }
+      width: 98%; } }
+  @media screen and (min-width: 1024px) {
+    .recent-articles {
+      top: 90px; } }
   .recent-articles article .cover-image {
     position: relative;
     height: 192px;
@@ -130,20 +143,26 @@ body {
   @media screen and (min-width: 450px) {
     .recent-articles .main-article {
       width: 66%;
-      height: 100%;
-      padding-left: 7px; }
+      height: 100%; }
       .recent-articles .main-article .cover-image {
         height: 339px; }
         .recent-articles .main-article .cover-image h2 {
           font-size: 40px; } }
+      @media screen and (min-width: 450px) and (min-width: 1024px) {
+        .recent-articles .main-article .cover-image h2 {
+          font-size: 56px; } }
+  @media screen and (min-width: 1024px) {
+    .recent-articles .main-article .cover-image {
+      height: 479px; } }
   @media screen and (min-width: 450px) {
     .recent-articles .first-article {
       position: absolute;
-      width: 31%;
-      top: -20px;
-      right: 7px; }
+      width: 33%;
+      top: 0;
+      right: 0; }
       .recent-articles .first-article .cover-image {
-        height: 165px; }
+        height: 165px;
+        margin: 0; }
         .recent-articles .first-article .cover-image .content {
           padding: 14px 10px; }
         .recent-articles .first-article .cover-image h2 {
@@ -154,8 +173,8 @@ body {
   @media screen and (min-width: 450px) {
     .recent-articles .second-article {
       position: absolute;
-      width: 31%;
-      right: 7px;
+      width: 33%;
+      right: 0;
       bottom: 0; }
       .recent-articles .second-article .cover-image {
         height: 165px;
@@ -167,6 +186,10 @@ body {
           font-weight: 900; }
         .recent-articles .second-article .cover-image span {
           font-size: 10px; } }
+  @media screen and (min-width: 1024px) {
+    .recent-articles .first-article .cover-image,
+    .recent-articles .second-article .cover-image {
+      height: 235.5px; } }
 
 .latest-news,
 .latest-deals {
@@ -177,22 +200,20 @@ body {
   @media screen and (min-width: 450px) {
     .latest-news,
     .latest-deals {
-      width: 97%;
+      width: 98%;
       margin-top: 140px; }
       .latest-news h1,
       .latest-deals h1 {
         margin-left: 10px; } }
+  @media screen and (min-width: 1440px) {
+    .latest-news,
+    .latest-deals {
+      width: 80%; } }
   .latest-news article,
   .latest-deals article {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px; }
-    @media screen and (min-width: 450px) {
-      .latest-news article,
-      .latest-deals article {
-        width: 30%;
-        display: inline-block;
-        padding: 10px; } }
     .latest-news article img,
     .latest-deals article img {
       width: 75px;
@@ -203,9 +224,13 @@ body {
           display: block;
           width: 100%;
           height: 115px; } }
+      @media screen and (min-width: 1440px) {
+        .latest-news article img,
+        .latest-deals article img {
+          height: 135px; } }
     .latest-news article .content,
     .latest-deals article .content {
-      margin-left: 20px; }
+      margin: 0 20px 0 15px; }
       @media screen and (min-width: 450px) {
         .latest-news article .content,
         .latest-deals article .content {
@@ -219,6 +244,10 @@ body {
           .latest-news article .content .title,
           .latest-deals article .content .title {
             margin: 10px 0 0 0; } }
+        @media screen and (min-width: 1024px) {
+          .latest-news article .content .title,
+          .latest-deals article .content .title {
+            font-size: 16px; } }
       .latest-news article .content span,
       .latest-deals article .content span {
         font-size: 12px;
@@ -233,13 +262,22 @@ body {
       .latest-news .container article,
       .latest-deals .container article {
         width: 30.6%;
+        display: inline-block;
         padding: 10px; } }
+    @media screen and (min-width: 450px) and (min-width: 1024px) {
+      .latest-news .container article,
+      .latest-deals .container article {
+        width: 23%; } }
 
 @media screen and (min-width: 450px) {
   .latest-deals img {
     height: 170px !important; }
   .latest-deals a {
     margin-right: 13px; } }
+
+@media screen and (min-width: 1440px) {
+  .latest-deals img {
+    height: 201px !important; } }
 
 .heading-decoration {
   font-size: 26px;
@@ -296,20 +334,42 @@ body {
 
 .latest-funding {
   width: 90%;
+  position: relative;
   margin: 0 auto; }
   @media screen and (min-width: 450px) {
     .latest-funding {
       width: 95%; } }
+  @media screen and (min-width: 1024px) {
+    .latest-funding {
+      width: 97%; } }
+  @media screen and (min-width: 1024px) {
+    .latest-funding h1 {
+      margin-left: 5px; } }
+  @media screen and (min-width: 1440px) {
+    .latest-funding {
+      width: 80%; } }
   .latest-funding ul {
     list-style: none;
     padding: 0;
     margin: 0; }
+    @media screen and (min-width: 1440px) {
+      .latest-funding ul {
+        position: absolute;
+        right: 0;
+        top: 17px; } }
     .latest-funding ul li {
       padding: 5px 0;
       font-size: 14px; }
       @media screen and (min-width: 450px) {
         .latest-funding ul li {
           font-size: 16px; } }
+      @media screen and (min-width: 1024px) {
+        .latest-funding ul li {
+          display: inline-block;
+          padding: 0 5px;
+          border-right: 1.5px solid #f42; }
+          .latest-funding ul li:last-child {
+            border: none; } }
   @media screen and (min-width: 450px) {
     .latest-funding .container {
       display: flex; }
@@ -377,6 +437,9 @@ body {
   @media screen and (min-width: 450px) {
     .articles {
       width: 97%; } }
+  @media screen and (min-width: 1440px) {
+    .articles {
+      width: 80%; } }
   .articles .cover-image {
     height: 280px;
     position: relative; }
@@ -435,6 +498,9 @@ body {
       .articles .container article {
         width: 47.3%;
         padding: 10px; } }
+    @media screen and (min-width: 450px) and (min-width: 1024px) {
+      .articles .container article {
+        width: 31.3%; } }
 
 footer {
   width: 100%;

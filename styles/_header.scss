@@ -31,7 +31,7 @@ header {
       .menu-icon {
         display: inline-block;
         border-left: 1px solid #ecf0f1;
-        padding: 16px;
+        padding: 13px;
       }
 
       .search-icon {
@@ -40,6 +40,7 @@ header {
 
       .menu-icon {
         color: #f42;
+        font-size: 20px;
       }
     } // end of nav-icons
   } // end of container
@@ -81,6 +82,14 @@ header {
       @include tablet {
         left: 60%;
       }
+
+      @include laptop {
+        left: 72%;
+      }
+
+      @include large-laptop {
+        left: 79%;
+      }
     }
   } // end of navbar
 
@@ -103,6 +112,10 @@ header {
 
         @include tablet {
           padding-right: 7px;
+        }
+
+        @include laptop {
+          padding-right: 15px;
         }
       }
     }
