@@ -66,6 +66,9 @@ header {
       @media screen and (min-width: 1440px) {
         .second-header .navbar .right-links {
           left: 79%; } }
+      @media screen and (min-width: 1920px) {
+        .second-header .navbar .right-links {
+          left: 84%; } }
   .second-header nav {
     height: 100%;
     display: flex;

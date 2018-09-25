@@ -90,6 +90,10 @@ header {
       @include large-laptop {
         left: 79%;
       }
+
+      @include desktop {
+        left: 84%;
+      }
     }
   } // end of navbar
 
