@@ -17,6 +17,10 @@
   @include large-laptop {
     width: 80%;
   }
+
+  @include desktop {
+    width: 60%;
+  }
   
   article {
     display: flex;

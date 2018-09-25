@@ -11,14 +11,18 @@
     width: 97%;
   }
 
+  @include large-laptop {
+    width: 80%;
+  }
+
+  @include desktop {
+    width: 60%;
+  }
+
   h1 {
     @include laptop {
       margin-left: 5px;
     }
-  }
-
-  @include large-laptop {
-    width: 80%;
   }
 
   ul {

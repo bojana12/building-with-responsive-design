@@ -114,6 +114,9 @@ body {
   @media screen and (min-width: 1024px) {
     .recent-articles {
       top: 90px; } }
+  @media screen and (min-width: 1440px) {
+    .recent-articles {
+      width: 99%; } }
   .recent-articles article .cover-image {
     position: relative;
     height: 192px;
@@ -154,6 +157,12 @@ body {
   @media screen and (min-width: 1024px) {
     .recent-articles .main-article .cover-image {
       height: 479px; } }
+  @media screen and (min-width: 1024px) and (min-width: 1920px) {
+    .recent-articles .main-article .cover-image {
+      height: 544px; } }
+  @media screen and (min-width: 1440px) {
+    .recent-articles .main-article {
+      width: 66.5%; } }
   @media screen and (min-width: 450px) {
     .recent-articles .first-article {
       position: absolute;
@@ -190,6 +199,10 @@ body {
     .recent-articles .first-article .cover-image,
     .recent-articles .second-article .cover-image {
       height: 235.5px; } }
+  @media screen and (min-width: 1024px) and (min-width: 1920px) {
+    .recent-articles .first-article .cover-image,
+    .recent-articles .second-article .cover-image {
+      height: 268px; } }
 
 .latest-news,
 .latest-deals {
@@ -209,6 +222,10 @@ body {
     .latest-news,
     .latest-deals {
       width: 80%; } }
+  @media screen and (min-width: 1920px) {
+    .latest-news,
+    .latest-deals {
+      width: 60%; } }
   .latest-news article,
   .latest-deals article {
     display: flex;
@@ -342,12 +359,15 @@ body {
   @media screen and (min-width: 1024px) {
     .latest-funding {
       width: 97%; } }
-  @media screen and (min-width: 1024px) {
-    .latest-funding h1 {
-      margin-left: 5px; } }
   @media screen and (min-width: 1440px) {
     .latest-funding {
       width: 80%; } }
+  @media screen and (min-width: 1920px) {
+    .latest-funding {
+      width: 60%; } }
+  @media screen and (min-width: 1024px) {
+    .latest-funding h1 {
+      margin-left: 5px; } }
   .latest-funding ul {
     list-style: none;
     padding: 0;
@@ -440,6 +460,9 @@ body {
   @media screen and (min-width: 1440px) {
     .articles {
       width: 80%; } }
+  @media screen and (min-width: 1920px) {
+    .articles {
+      width: 60%; } }
   .articles .cover-image {
     height: 280px;
     position: relative; }

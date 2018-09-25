@@ -13,6 +13,10 @@
     top: 90px;
   }
 
+  @include large-laptop {
+    width: 99%;
+  }
+
   article {
     .cover-image {
       position: relative;
@@ -67,12 +71,20 @@
           }
         }
       }
-    } // end pf tablet
+    } // end of tablet
 
     @include laptop {
       .cover-image {
         height: 479px;
+
+        @include desktop {
+          height: 544px;
+        }
       }
+    } // end of laptop
+
+    @include large-laptop {
+      width: 66.5%;
     }
   } // end of main-article
 
@@ -135,6 +147,10 @@
     @include laptop {
       .cover-image {
         height: 235.5px;
+
+        @include desktop {
+          height: 268px;
+        }
       }
     }
   }
